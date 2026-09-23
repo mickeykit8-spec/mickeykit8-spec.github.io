@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mickeykit8-spec.github.io/sitemap.xml
