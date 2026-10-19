@@ -166,3 +166,24 @@ details.faq p{margin-top:10px;color:var(--muted);max-width:68ch}
 
 .note{border-left:3px solid var(--gold);background:var(--gold-soft);padding:14px 18px;border-radius:0 8px 8px 0;font-size:15.5px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* article components */
+.byline{font-size:14.5px;color:var(--muted)}
+.answer{border:1px solid var(--accent);background:var(--accent-soft);border-radius:var(--radius);padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.answer .tag{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.answer p{margin:0;font-size:17.5px;line-height:1.7}
+.toc{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:16px 20px;font-size:15.5px}
+.toc ol{margin:8px 0 0;padding-left:22px;display:grid;gap:4px}
+.prose h2{scroll-margin-top:80px}
+.prose h3{margin-top:6px;font-size:18.5px}
+ol.check{list-style:none;padding-left:0;counter-reset:c}
+ol.check li{counter-increment:c;padding-left:36px;position:relative}
+ol.check li::before{content:counter(c);position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-family:var(--mono);font-size:12.5px;display:grid;place-items:center}
+.author{display:flex;gap:14px;align-items:flex-start;border-top:1px solid var(--line);padding-top:20px;font-size:15.5px;color:var(--muted)}
+.author .dot{flex:none;width:44px;height:44px;border-radius:99px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--mono);font-weight:700}
+.author b{color:var(--ink)}
+.related h2{font-size:22px}
+.rel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:12px}
+.rel{display:flex;flex-direction:column;gap:8px;padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--ink);text-decoration:none}
+.rel:hover{border-color:var(--accent)}
+.rel .muted{font-size:14.5px}
