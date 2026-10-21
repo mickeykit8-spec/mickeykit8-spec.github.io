@@ -187,3 +187,4 @@ ol.check li::before{content:counter(c);position:absolute;left:0;top:1px;width:24
 .rel{display:flex;flex-direction:column;gap:8px;padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--ink);text-decoration:none}
 .rel:hover{border-color:var(--accent)}
 .rel .muted{font-size:14.5px}
+h2.h3{font-size:20px;font-weight:600}
